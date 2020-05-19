@@ -1,3 +1,3 @@
 # azurlane-gacha-simulator
-not done yet, this is version before Mamagi Reun EN
-<br> right now, website hasn't responsive at all
+This is a version before <strong>Mamagi Reun</strong> EN<br>
+<br>Right now, website has <strong>not responsive</strong>at all
