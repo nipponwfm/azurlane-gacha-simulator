@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gacha Simulator</title>
+    <link rel="stylesheet" href="gachasimulator.css">
+
+</head>
+
+<body>
+    <!--BODY STYLING-->
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(-45deg, rgb(130, 148, 167, 0.3), #c8d6e5), url(Belfast\ x\ Azuma.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <!-- FRAME -->
+    <div id="list_iteams">
+        <ul>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li style="clear: left">
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="frame">
+                    <p class="shipId"></p>
+                </div>
+                <div class="type">
+                    <p></p>
+                </div>
+            </li>
+            <br>
+            <button type="button" onclick=roll() style="margin-left: 424px">Submit</button>
+        </ul>
+    </div>
+    <!--COUNTER-->
+    <div id="summary_side">
+        <div id="summary">
+            <img src="Untitled-1.gif" alt="">
+            <br>
+            <span>Roll count: <p style="top:20px">0</p></span><br>
+            <span>SSR: <p>0</p></span><br>
+            <span>Elite: <p>0</p></span><br>
+            <span>Rare: <p>0</p></span><br>
+            <span>Normal: <p>0</p></span><br>
+            <span>Current pool:</span>
+            <center>
+                <p id="currentPool">Not selected</p>
+            </center>
+            <br>
+            <center>
+                <button type="button" onclick="reset(1)"
+                    style="width:60px; height: 30px; font-size: 15px">Reset</button>
+            </center>
+        </div>
+    </div>
+    <!--POOL LISTS-->
+    <div id="pool">
+        <button onclick="setPoolLight()">LIGHT</button><br>
+        <button onclick="setPoolHeavy()">HEAVY</button><br>
+        <button onclick="setPoolSpecial()">SPECIAL</button><br>
+        <button onclick="setPoolEvent()">EVENT</button><br>
+    </div>
+    <!--ANNOUNCEMENT-->
+    <div id="announcement" onclick="close_ann()">
+        <p>Please choose a pool!!</p>
+    </div>
+    <!-- END -->
+    <h1>Gacha Simulator</h1>
+    <h1 style="bottom: 30px">Create by dong</h1>
+    <script src="gachasimulator.js"></script>
+</body>
+
+</html>

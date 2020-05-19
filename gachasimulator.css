@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+button {
+    border-radius: 40px;
+}
+button:hover {
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+/* FRAME */
+#list_iteams {
+    display: flex;
+    justify-content: center;
+}
+li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+.frame {
+    font-size: 40px;
+    text-align: center;
+    border: 4px solid black;
+    width: 170px;
+    height: 270px;
+    margin: 20px;
+}
+.type {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    opacity: 0.5;
+    top: 240px;
+    left: 20px;
+    width: 170px;
+    height: 50px;
+}
+.type p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.shipId {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+ul button, #pool button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+/* COUNTER */
+#summary_side {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+#summary {
+    position: relative;
+    border-radius: 0px 15px 15px 0px ;
+    border: 4px solid gray;
+    border-left: none;
+    width: 140px;
+    height: 250px;
+}
+#summary span, #summary span p, #currentPool {
+    font-size: 20px;
+}
+#summary span p {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+#currentPool {
+    color: red;
+}
+#summary img {
+    position: absolute;
+    transform: scale(-0.5,0.5);
+    left:-60px;
+    top: -147px;
+}
+
+/* POOL LIST */
+#pool {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+#pool button {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin: 10px;
+}
+#pool button:active {
+    color: red;
+    font-size: 20px;
+}
+
+/* ANNOUNCEMENT */
+#announcement {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+#announcement p {
+    display: inline-block;
+    position: relative;
+    margin-top: 250px;
+    padding: 30px;
+    left: 430px;
+    font-size: 50px;
+    color: white;
+}
+
+/* END */
+h1 {
+    position: fixed;
+    bottom: 0px; 
+    right: 0px;
+    color: white;
+    z-index: -1;
+}
